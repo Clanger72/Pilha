@@ -8,13 +8,11 @@ int opcao;
 
 void exibir (void){
 	printf("\n");
+	if(topo == 0){
+		printf("Pilha vazia!");
+	}
 	for(int i = topo-1; i>=0; i--){
-		if(topo == -1){
-			printf("Pilha vazia!");
-		}else{
 		printf("Na posicao %d temos %c ", i, pilha[i]);
-		
-		}
 	}
 	printf("\n");
 	system("pause");
